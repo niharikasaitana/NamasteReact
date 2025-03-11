@@ -1,20 +1,24 @@
 <html>
     <body>
-
+    <div>
+        above the root
+    </div>
         <div id="root"> 
-
+d
         </div>
 
+        <div>
+            below the root
+        </div>
+        <!-- 
+             // this script tag sequentics is necssary as first we need to include nad load core react script
+                then script of react dom to build bridge betwwen react and browser- to perform dom actions
+                thean app.js as it use react- then needs to load first , so that we can use it inisde app.js file -->
             <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
             <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-            <script>
-                // just cretaed an elemnt so used React
-                const heading = React.createElement('div',{},'hello world from react!');
-                // here we are create the root under which we want cretaed elment to render - which is bascially an dom intercation . so, using ReactDOM
-                const root = ReactDOM.createRoot(document.getElementById('root'));
-                //here we are rendering
-                root.render(heading);
+            <script src="./app.js">
+              
             </script>
     </body>
 </html>
+
