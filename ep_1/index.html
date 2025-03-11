@@ -1,0 +1,20 @@
+<html>
+    <body>
+
+        <div id="root"> 
+
+        </div>
+
+            <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+            <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+            <script>
+                // just cretaed an elemnt so used React
+                const heading = React.createElement('div',{},'hello world from react!');
+                // here we are create the root under which we want cretaed elment to render - which is bascially an dom intercation . so, using ReactDOM
+                const root = ReactDOM.createRoot(document.getElementById('root'));
+                //here we are rendering
+                root.render(heading);
+            </script>
+    </body>
+</html>
